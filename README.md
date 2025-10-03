@@ -1,2 +1,3 @@
-# sani-s-first
-my first use of github
+# WEATHER Search
+<br>
+APIs based Weather Application
