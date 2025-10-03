@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>WEATHER SEARCH</title>
+</head>
+<body onload="showTime()">
+       <div class="search">
+            <input id="city" type="text" placeholder="Enter city name" spellcheck="false">
+            <button id="btn">
+                <i class="fa fa-search"></i>
+            </button>
+        </div>
+      
+    <div class="container">
+        <div class="weather">
+            <div class="front">
+                <div class="cloud cloud1"></div>
+                <div class="cloud cloud2"></div>
+                <div class="cloud cloud3"></div>
+                <h2 class="city">
+                    <span id="city-name">pune</span>
+                </h2>
+             <h3 class="time" id="clock"></h3>
+             <h1 class="temp">24°c</h1>
+             <h4 class="condition">nothing</h4>
+            </div>
+            <div class="details">
+                <h3 class="details-title">Current Conditions</h3>
+                <div class="col">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <p class="wind">5 Km/h</p>
+                        <p>Wind Speed </p>
+                    </div>
+                </div> 
+                <div class="col">
+                    <i class="fa-solid fa-cloud-showers-heavy"></i>
+                    <div>
+                        <p class="precipitation"> 0 </p>
+                        <p>precipitation</p>
+                    </div>
+                </div> 
+                <div class="col">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <div>
+                        <p class="pressure">1000</p> 
+                        <p>pressure</p>
+                    </div>
+                </div>          
+                <div class="col">
+                    <i class="fa-solid fa-smog"></i>
+                    <div>
+                        <p class="aqi"></p> 
+                        <p>AQI</p>
+                    </div>
+                </div>          
+                <div class="col">
+                    <i class="fa-solid fa-sun"></i>
+                    <div>
+                        <p class="uv">00</p> 
+                        <p>UV </p>
+                    </div>
+                </div>          
+                <div class="col">
+                    <i class="fa-solid fa-temperature-half"></i>
+                    <div>
+                        <p class="dewpoint">00</p> 
+                        <p>dewpoint</p>
+                    </div>
+                </div>                     
+        </div>
+    </div>
+    <div class="map-container">
+        <div class="map-title">
+            <h3>Satellite Map</h3>
+            <a href="https://www.accuweather.com/en/in/national/satellite" class="open-map-link" target="_blank">
+                Open Map
+            </a>
+        </div>
+        <a href="https://www.accuweather.com/en/in/national/satellite" class="map-link">
+            <div class="map"></div>
+        </a>
+    </div>
+    <script src="project.js"></script>
+</body>
+</html>
